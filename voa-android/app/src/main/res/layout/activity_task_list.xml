@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.scwang.smart.refresh.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/add_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_register_2"
+                android:text="添加任务"/>
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/ll_task"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:paddingLeft="15dp">-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_group_by_create"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:background="@drawable/bg_group"-->
+            <!--                    android:drawableLeft="@mipmap/ic_group_create"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:paddingRight="10dp"-->
+            <!--                    android:text="按创建时间排序"-->
+            <!--                    android:textSize="15dp"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:letterSpacing="0.1"-->
+            <!--                    android:gravity="center"/>-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="20dp"-->
+            <!--                    android:layout_height="wrap_content"/>-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_group_by_program"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:background="@drawable/bg_group"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:paddingRight="10dp"-->
+            <!--                    android:drawableLeft="@mipmap/ic_group_program"-->
+            <!--                    android:text="按项目分组"-->
+            <!--                    android:textSize="15dp"-->
+            <!--                    android:letterSpacing="0.1"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:gravity="center"/>-->
+            <!--            </LinearLayout>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dp"
+                android:text="需求管理"
+                android:textSize="17sp"/>
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+        </LinearLayout>
+    </ScrollView>
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

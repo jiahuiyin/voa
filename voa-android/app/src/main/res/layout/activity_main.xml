@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+<!--         <include layout="@layout/activity_bottom" />-->
+    <com.yinglan.alphatabs.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:id="@+id/atv_task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@mipmap/ic_task1"
+            app:tabIconSelected="@mipmap/ic_tast2"
+            app:tabText="任务"
+            app:tabTextSize="20sp"
+            app:textColorNormal="@color/black"
+            app:textColorSelected="#0b988f"
+            app:badgeBackgroundColor="@color/white"
+            app:paddingTexwithIcon="5dp"/>
+        <com.yinglan.alphatabs.AlphaTabView
+            android:id="@+id/atv_program"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@mipmap/ic_program1"
+            app:tabIconSelected="@mipmap/ic_program2"
+            app:tabText="项目"
+            app:tabTextSize="20sp"
+            app:textColorNormal="@color/black"
+            app:textColorSelected="#0b988f"
+            app:badgeBackgroundColor="@color/white"
+            app:paddingTexwithIcon="5dp"/>
+        <com.yinglan.alphatabs.AlphaTabView
+            android:id="@+id/atv_team"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@mipmap/ic_team1"
+            app:tabIconSelected="@mipmap/ic_team2"
+            app:tabText="团队"
+            app:tabTextSize="20sp"
+            app:textColorNormal="@color/black"
+            app:textColorSelected="#0b988f"
+            app:badgeBackgroundColor="@color/white"
+            app:paddingTexwithIcon="5dp"/>
+        <com.yinglan.alphatabs.AlphaTabView
+            android:id="@+id/atv_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@mipmap/ic_my1"
+            app:tabIconSelected="@mipmap/ic_my2"
+            app:tabText="我的"
+            app:tabTextSize="20sp"
+            app:textColorNormal="@color/black"
+            app:textColorSelected="#0b988f"
+            app:badgeBackgroundColor="@color/white"
+            app:paddingTexwithIcon="5dp"/>
+    </com.yinglan.alphatabs.AlphaTabsIndicator>
+
+</LinearLayout>

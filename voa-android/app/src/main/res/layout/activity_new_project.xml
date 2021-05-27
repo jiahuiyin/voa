@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <Widget.EditInputView
+            android:layout_marginTop="20dp"
+            android:id="@+id/edi_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:inputMarginStart="10dp"
+            app:headerText="  新建项目"
+            app:headerTextSize="25sp"
+            app:headerTextStyle="bold"
+            app:textSize="25sp"
+            app:hint="请输入项目名称  "
+            android:inputType="text"
+            app:maxLength="10" />
+<!--        <View-->
+<!--            android:layout_below="@id/edi_project_name"-->
+<!--            android:id="@+id/divider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="#90909090"-->
+<!--            android:layout_marginBottom="3dp"-->
+<!--            android:layout_marginTop="3dp"/>-->
+<!--        <Widget.EditInputView-->
+<!--            android:layout_below="@id/divider"-->
+<!--            android:id="@+id/edi_project_team"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:inputMarginStart="10dp"-->
+<!--            app:headerText="  所属团队"-->
+<!--            app:headerTextSize="25sp"-->
+<!--            app:headerTextStyle="bold"-->
+<!--            app:textSize="25sp"-->
+<!--            app:hint="请输入团队ID  "-->
+<!--            app:maxLength="10">-->
+<!--        </Widget.EditInputView>-->
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edi_project_name"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_btn_register_2"
+            android:text="确定"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_team"-->
+<!--            android:layout_below="@id/divider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:background="@color/white">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_edit_head"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="所属团队"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="25sp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:gravity="start|center_vertical"/>-->
+<!--                &lt;!&ndash;  输入框  &ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:id="@+id/et_edit_input"-->
+<!--                    android:layout_toEndOf="@id/tv_edit_head"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="请选择团队"-->
+<!--                    android:textSize="25sp"-->
+<!--                    android:background="@null"-->
+<!--                    android:textColor="@color/c_D2D0DC"-->
+<!--                    android:gravity="end|center_vertical"-->
+<!--                    android:drawableRight="@mipmap/ic_right_arrow"/>-->
+</RelativeLayout>

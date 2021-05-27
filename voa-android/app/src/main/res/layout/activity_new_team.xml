@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Widget.EditInputView
+        android:layout_marginTop="20dp"
+        android:id="@+id/edi_team_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:inputMarginStart="10dp"
+        app:headerText="  团队名称"
+        app:headerTextSize="25sp"
+        app:headerTextStyle="bold"
+        app:textSize="25sp"
+        app:hint="请输入团队名称 "
+        android:inputType="number"
+        app:maxLength="10" />
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edi_team_name"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn_register_2"
+        android:text="确定"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

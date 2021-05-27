@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/login_background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp">
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="用户登录"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+        <!-- 输入 -->
+        <LinearLayout
+            android:id="@+id/login_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/login_user_name"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="账号/手机号"
+                android:maxLines="1"
+                android:inputType="number"
+                android:drawableLeft="@mipmap/login_account"
+                android:shadowColor="@color/black"/>
+            <EditText
+                android:id="@+id/login_user_password"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="密码"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:drawableLeft="@mipmap/login_password"
+                android:shadowColor="@color/black"/>
+
+            <!-- 登录按钮 -->
+            <Button
+                android:id="@+id/login_lg"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_input"
+                android:layout_gravity="center"
+                android:text="登录"
+                android:background="@drawable/bg_btn_register_2"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+        <!-- 注册和找回密码 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_input"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/login_forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="忘记密码了？"
+                android:textSize="15sp"
+                android:clickable="true"
+                android:layout_gravity="center" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="没有账户？"/>
+                <TextView
+                    android:id="@+id/login_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即注册"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15sp"
+                    android:clickable="true"/>
+            </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/login_register"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="没有账户？立即注册"-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_gravity="center" />-->
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/confirm_layout_input"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        <!-- 输入密码 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:text=" 再次输入密码:"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/confirm_pwd"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:maxLines="1"
+                android:background="@drawable/bg_et_register"
+                android:inputType="textPassword"
+                android:hint="密码"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_below="@id/confirm_layout_input"
+        android:id="@+id/confirm_btn_gonext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_btn_register_2"
+        android:layout_marginTop="30dp"
+        android:text="下一步"/>
+</RelativeLayout>

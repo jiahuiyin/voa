@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  公共属性  -->
+    <!--  前置文字内容  -->
+    <attr name="headerText" format="string"/>
+    <!--  前置文字大小  -->
+    <attr name="headerTextSize" format="dimension"/>
+    <!--  前置文字大小  -->
+    <attr name="headerTextStyle">
+        <flag name="normal" value="0" />
+        <flag name="bold" value="1" />
+        <flag name="italic" value="2" />
+    </attr>
+    <!--  前置文字颜色  -->
+    <attr name="headerTextColor" format="reference|color"/>
+    <!--  前置文字左边间距  -->
+    <attr name="headerPaddingStart" format="dimension"/>
+    <!--  前置文字右边间距  -->
+    <attr name="headerPaddingEnd" format="dimension"/>
+    <!--  前置文字顶部间距  -->
+    <attr name="headerPaddingTop" format="dimension"/>
+    <!--  前置文字底部间距  -->
+    <attr name="headerPaddingBottom" format="dimension"/>
+    <!--  公共属性  -->
+
+    <!--  带前置文字的输入框  -->
+    <declare-styleable name="EditInputView">
+        <!--  文字内容  -->
+        <attr name="text" format="string"/>
+        <!--  文字大小  -->
+        <attr name="textSize" format="dimension"/>
+        <!--  文字颜色  -->
+        <attr name="textColor" format="reference|color"/>
+        <!--  最大输入字符数  -->
+        <attr name="maxLength" format="integer"/>
+        <!--  输入限制  -->
+        <attr name="android:enabled"/>
+        <!--  输入类型  -->
+        <attr name="android:inputType"/>
+        <!--  输入开始边距  -->
+        <attr name="inputMarginStart" format="dimension"/>
+        <!--  输入结束边距  -->
+        <attr name="inputMarginEnd" format="dimension"/>
+        <!--  输入顶部边距  -->
+        <attr name="inputMarginTop" format="dimension"/>
+        <!--  输入底部边距  -->
+        <attr name="inputMarginBottom" format="dimension"/>
+        <!--  输入开始间距  -->
+        <attr name="inputPaddingStart" format="dimension"/>
+        <!--  输入结束间距  -->
+        <attr name="inputPaddingEnd" format="dimension"/>
+        <!--  输入顶部间距  -->
+        <attr name="inputPaddingTop" format="dimension"/>
+        <!--  输入底部间距  -->
+        <attr name="inputPaddingBottom" format="dimension"/>
+        <!--  输入底部间距  -->
+        <attr name="android:gravity"/>
+        <!--  提示文字  -->
+        <attr name="hint" format="string"/>
+        <!--  提示文字颜色  -->
+        <attr name="hintColor" format="reference|color"/>
+        <!--  前置文字内容  -->
+        <attr name="headerText"/>
+        <!--  前置文字大小  -->
+        <attr name="headerTextSize"/>
+        <!--  前置文字大小  -->
+        <attr name="headerTextStyle"/>
+        <!--  前置文字颜色  -->
+        <attr name="headerTextColor"/>
+        <!--  前置文字左边间距  -->
+        <attr name="headerPaddingStart"/>
+        <!--  前置文字右边间距  -->
+        <attr name="headerPaddingEnd"/>
+        <!--  前置文字顶部间距  -->
+        <attr name="headerPaddingTop"/>
+        <!--  前置文字底部间距  -->
+        <attr name="headerPaddingBottom"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_task_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp">
+
+    <CheckBox
+        android:id="@+id/cb_task_item"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="睡觉"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:clickable="false"/>
+    <TextView
+        android:id="@+id/tv_task_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我在睡觉"
+        android:paddingLeft="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+</LinearLayout>
